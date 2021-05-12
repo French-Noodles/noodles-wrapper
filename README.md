@@ -15,11 +15,11 @@ npm i noodles-wrapper
 ## Examples
 ### Random memes command, no input example
 ```js
-const  noodles_api  =  require('noodles-wrapper')
+const noodles_api = require('noodles-wrapper')
 const Discord = require('discord.js')
 
-const  Image  =  await  noodles_api.randommeme()
-let  embed=  new  Discord.MessageEmbed()
+const Image = await noodles_api.randommeme()
+let  embed = new Discord.MessageEmbed()
 	.attachFiles([{name:  "meme.png",  attachment:Image}])
 	.setImage('attachment://meme.png')
 message.channel.send(embed)
@@ -27,40 +27,40 @@ message.channel.send(embed)
 
 ### Lisa-Stage command, 1 text input example
 ```js
-const  noodles_api  =  require('noodles-wrapper')
+const noodles_api = require('noodles-wrapper')
 const Discord = require('discord.js')
 
-let  text  =  args.toString().replace(/,/g,  '  ')
-let  Image  =  await noodles_api.lisastage(text)
+let text = args.toString().replace(/,/g,  '  ')
+let Image = await noodles_api.lisastage(text)
   
-const  attachment  =  new  Discord.MessageAttachment(Image);
+const attachment = new Discord.MessageAttachment(Image);
 message.channel.send(attachment);
 ```
 
 ###  Drake command, more than one text input example
 ```js
-const  noodles_api  =  require('noodles-wrapper');
+const noodles_api = require('noodles-wrapper');
 
-let  text1  =  args.toString().split('/')[0].replace(/,/g,  '  ')
-let  text2  =  args.toString().split('/')[1].replace(/,/g,  '  ')
+let text1 = args.toString().split('/')[0].replace(/,/g,  '  ')
+let text2 = args.toString().split('/')[1].replace(/,/g,  '  ')
 
-let  Image  =  await  noodles_api.drake(text1,  text2)
-const  attachment  =  new  Discord.MessageAttachment(Image);
+let Image  =  await noodles_api.drake(text1,  text2)
+const attachment = new Discord.MessageAttachment(Image);
 
 message.channel.send(attachment);
 ```
 
 ### Trash command, image input example
 ```js
-let  Discord  =  require("discord.js");
-const  noodles_api  =  require('noodles-wrapper')
+let Discord = require("discord.js");
+const noodles_api = require('noodles-wrapper')
 
-let  user  =  message.mentions.users.first() ||  message.author
-let  result  =  user.displayAvatarURL()
+let user = message.mentions.users.first() || message.author
+let result = user.displayAvatarURL()
 
-let  Image  =  await  noodles_api.trash(result)
+let Image = await  noodles_api.trash(result)
 
-const  attachment  =  new  Discord.MessageAttachment(Image);
+const attachment = new Discord.MessageAttachment(Image);
 message.channel.send(attachment);
 ```
 
