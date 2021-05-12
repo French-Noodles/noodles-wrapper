@@ -63,8 +63,32 @@ message.channel.send(attachment);
 
 ## Endpoints
 You can get a full list of the possible API endpoints [Here](https://frenchnoodles.xyz/api/endpoints)
+But here are the functions:
 
-
+ - `drake(text1 ,text2)`
+ - `worthless(text)`
+ - `presidentialalert(text)`
+ - `spongebobburnpaper(text)`
+ - `lisastage(text)`
+ - `changemymind(text)`
+ - `awkwardmonkey(text)`
+ - `blur(image)`
+ - `invert(image)`
+ - `edges(image)`
+ - `circle(image)`
+ - `wide(image)`
+ - `uglyupclose(image)`
+ - `clown(image)`
+ - `rip(image)`
+ - `affectbaby(image)`
+ - `trash(image)`
+ - `welcomebanner` implemented to wrapper soon
+ - `boostercard(image)`
+ - `randommeme()`
+ - `balancecard` implemented to wrapper soon
+ 
+just replace the inputs with whatever you want,
+balancecard and welcomebanner are missing cuz they arent implemented in the API yet
 
 ## Made by
 Made with ❤ by French Noodles#6046, you can checkout my website [Here](https://frenchnoodles.xyz) or join my discord server [Here!](https://frenchnoodles.xyz/discord) if you have any questions or suggestions or bug reports
