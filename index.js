@@ -62,70 +62,70 @@ module.exports.awkwardmonkey = async function(text) {
 }
 
 module.exports.blur = async function(image) {
-    if(!text) throw new Error('The field text was left empty in blur function')
+    if(!image) throw new Error('The field text was left empty in blur function')
     const input = `image=${encodeURIComponent(image)}`
     const response = await request('blur', input)
     return response.buffer()
 }
 
 module.exports.invert = async function(image) {
-    if(!text) throw new Error('The field text was left empty in invert function')
+    if(!image) throw new Error('The field text was left empty in invert function')
     const input = `image=${encodeURIComponent(image)}`
     const response = await request('invert', input)
     return response.buffer()
 }
 
 module.exports.edges = async function(image) {
-    if(!text) throw new Error('The field text was left empty in edges function')
+    if(!image) throw new Error('The field text was left empty in edges function')
     const input = `image=${encodeURIComponent(image)}`
     const response = await request('edges', input)
     return response.buffer()
 }
 
 module.exports.circle = async function(image) {
-    if(!text) throw new Error('The field text was left empty in circle function')
+    if(!image) throw new Error('The field text was left empty in circle function')
     const input = `image=${encodeURIComponent(image)}`
     const response = await request('circle', input)
     return response.buffer()
 }
 
 module.exports.wide = async function(image) {
-    if(!text) throw new Error('The field text was left empty in wide function')
+    if(!image) throw new Error('The field text was left empty in wide function')
     const input = `image=${encodeURIComponent(image)}`
     const response = await request('wide', input)
     return response.buffer()
 }
 
 module.exports.uglyupclose = async function(image) {
-    if(!text) throw new Error('The field text was left empty in uglyupclose function')
+    if(!image) throw new Error('The field text was left empty in uglyupclose function')
     const input = `image=${encodeURIComponent(image)}`
     const response = await request('uglyupclose', input)
     return response.buffer()
 }
 
 module.exports.clown = async function(image) {
-    if(!text) throw new Error('The field text was left empty in clown function')
+    if(!image) throw new Error('The field text was left empty in clown function')
     const input = `image=${encodeURIComponent(image)}`
     const response = await request('clown', input)
     return response.buffer()
 }
 
 module.exports.rip = async function(image) {
-    if(!text) throw new Error('The field text was left empty in rip function')
+    if(!image) throw new Error('The field text was left empty in rip function')
     const input = `image=${encodeURIComponent(image)}`
     const response = await request('rip', input)
     return response.buffer()
 }
 
 module.exports.affectbaby = async function(image) {
-    if(!text) throw new Error('The field text was left empty in affectbaby function')
+    if(!image) throw new Error('The field text was left empty in affectbaby function')
     const input = `image=${encodeURIComponent(image)}`
     const response = await request('affectbaby', input)
     return response.buffer()
 }
 
 module.exports.trash = async function(image) {
-    if(!text) throw new Error('The field text was left empty in trash function')
+    if(!image) throw new Error('The field text was left empty in trash function')
     const input = `image=${encodeURIComponent(image)}`
     const response = await request('trash', input)
     return response.buffer()
@@ -134,7 +134,7 @@ module.exports.trash = async function(image) {
 //welcome banner soon
 
 module.exports.boostercard = async function(image) {
-    if(!text) throw new Error('The field text was left empty in boostercard function')
+    if(!image) throw new Error('The field text was left empty in boostercard function')
     const input = `image=${encodeURIComponent(image)}`
     const response = await request('boostercard', input)
     return response.buffer()
