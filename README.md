@@ -89,7 +89,18 @@ message.channel.send(embed)
 ```
 
 ### Welcome banner
-As for the welcome banner, it the same code as balance card, just remove text1 replace text2 with subtitle, aka setSubtitle
+As for the welcome banner, it the same code as balance card, just remove text1 replace text2 with subtitle, aka setSubtitle, like so:
+```js
+const noodles_api = require('noodles-wrapper')
+
+let Image = await new noodles_api.welcomebanner()
+.setBackground(background)
+.setAvatar(avatar)
+.setTitle(username)
+.setSubtitle(subtitle)
+.setTextColor(textcolor)
+.build()
+```
 
 ## Endpoints
 You can get a full list of the possible API endpoints [Here](https://frenchnoodles.xyz/api/endpoints)
@@ -119,6 +130,17 @@ But here are the functions:
  
 just replace the inputs with whatever you want,
 balancecard and welcomebanner are missing cuz they arent implemented in the API yet
+
+## Quota
+Due to recent spamming incidents, quotas were added to stop the API from going down, down worry thoe!
+Its really subtle!
+
+### Default free tier
+-	1 request per second
+-	50 requests per hour
+-	250 requests per day
+
+### More tiers coming soon, if you have a big app and need it now, feel free to DM me on discord to discuss a price
 
 ## Made by
 Made with ❤ by French Noodles#6046, you can checkout my website [Here](https://frenchnoodles.xyz) or join my discord server [Here!](https://frenchnoodles.xyz/discord) if you have any questions or suggestions or bug reports
