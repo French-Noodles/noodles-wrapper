@@ -86,7 +86,7 @@ message.channel.send(embed)
 ```
 
 ### Welcome banner
-As for the welcome banner, it the same code as balance card, just replace text2 with subtitle, aka setSubtitle
+As for the welcome banner, it the same code as balance card, just remove text1 replace text2 with subtitle, aka setSubtitle
 
 ## Endpoints
 You can get a full list of the possible API endpoints [Here](https://frenchnoodles.xyz/api/endpoints)

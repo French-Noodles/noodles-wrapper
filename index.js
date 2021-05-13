@@ -144,12 +144,12 @@ module.exports.welcomebanner = class welcomebanner{
     }
 }
 async function welcomebannerbuild(background, avatar, title, text1, subtitle, textcolor) {
-    if(!background) throw new Error('The field background was left empty in balancecard function')
-    if(!avatar) throw new Error('The field avatar was left empty in balancecard function')
-    if(!title) throw new Error('The field title was left empty in balancecard function')
-    if(!text1) throw new Error('The field text1 was left empty in balancecard function')
-    if(!text2) throw new Error('The field text2 was left empty in balancecard function')
-    if(!textcolor) throw new Error('The field textcolor was left empty in balancecard function')
+    if(!background) throw new Error('The field background was left empty in welcomebanner function')
+    if(!avatar) throw new Error('The field avatar was left empty in welcomebanner function')
+    if(!title) throw new Error('The field title was left empty in welcomebanner function')
+    if(!text1) throw new Error('The field text1 was left empty in welcomebanner function')
+    if(!text2) throw new Error('The field text2 was left empty in welcomebanner function')
+    if(!textcolor) throw new Error('The field textcolor was left empty in welcomebanner function')
     const input = `background=${encodeURIComponent(background)}&avatar=${encodeURIComponent(avatar)}&title=${encodeURIComponent(title)}&text1=${encodeURIComponent(text1)}&subtitle=${encodeURIComponent(subtitle)}&textcolor=${encodeURIComponent(textcolor.replace('#', ''))}`
     const response = await request('welcomebanner', input)
     return response.buffer()
