@@ -64,6 +64,30 @@ const attachment = new Discord.MessageAttachment(Image);
 message.channel.send(attachment);
 ```
 
+### Balance card command, for more than 2 inputs example
+```js
+let Image = await new noodles_api.balancecard() //You first make the variable
+.setBackground(background) //then set all the arguments like so
+.setAvatar(avatar)
+.setTitle(title)
+.setText1(text1)
+.setText2(text2)
+.setTextColor(textcolor)
+.build() //and when your done, .build() it
+
+
+let embed= new Discord.MessageEmbed()
+  embed.setTitle(`Here is your balance ${message.author.username}!!`)
+  embed.attachFiles([{name: "balance.png", attachment:Image}])
+  embed.setImage('attachment://balance.png');
+  embed.setColor(process.env.EMBEDCOLOR)
+  embed.setFooter('Using Noodles API')
+message.channel.send(embed)
+```
+
+### Welcome banner
+As for the welcome banner, it the same code as balance card, just replace text2 with subtitle, aka setSubtitle
+
 ## Endpoints
 You can get a full list of the possible API endpoints [Here](https://frenchnoodles.xyz/api/endpoints)
 But here are the functions:
@@ -85,10 +109,10 @@ But here are the functions:
  - `rip(image)`
  - `affectbaby(image)`
  - `trash(image)`
- - `welcomebanner` implemented to wrapper soon
+ - `welcomebanner() (set stuff like the example)`
  - `boostercard(image)`
  - `randommeme()`
- - `balancecard` implemented to wrapper soon
+ - `balancecard() (set stuff like the example)`
  
 just replace the inputs with whatever you want,
 balancecard and welcomebanner are missing cuz they arent implemented in the API yet
