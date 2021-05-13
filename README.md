@@ -66,6 +66,9 @@ message.channel.send(attachment);
 
 ### Balance card command, for more than 2 inputs example
 ```js
+let Discord = require("discord.js");
+const noodles_api = require('noodles-wrapper')
+
 let Image = await new noodles_api.balancecard() //You first make the variable
 .setBackground(background) //then set all the arguments like so
 .setAvatar(avatar)
