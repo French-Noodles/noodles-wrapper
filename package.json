@@ -1,6 +1,6 @@
 {
   "name": "noodles-wrapper",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "A simple Noodles API wrapper made by FrenchNoodles#6046",
   "keywords": ["discord-bot", "api-wrapper", "discord-js", "noodles-api"],
   "main": "index.js",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/French-Noodles/noodles-wrapper.git"
   },
   "author": "French Noodles",
-  "license": "GNU",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/French-Noodles/noodles-wrapper/issues"
   },
