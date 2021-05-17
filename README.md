@@ -129,16 +129,29 @@ But here are the functions:
  - `balancecard() (set stuff like the example)`
  
 just replace the inputs with whatever you want,
-balancecard and welcomebanner are missing cuz they arent implemented in the API yet
+and for the "set stuff like example" just do as the example said at the start of the documentation
 
 ## Quota
 Due to recent spamming incidents, quotas were added to stop the API from going down, down worry thoe!
 Its really subtle!
 
-### Default free tier
+### Free tier (default) 
 -	1 request per second
 -	50 requests per hour
 -	250 requests per day
+
+### Hobby tier ($3)
+-	2 request per second
+-	80 requests per hour
+-	380 requests per day
+
+### Standard tier ($7) `most popular`
+-	3 request per second
+-	200 requests per hour
+-	800 requests per day
+
+To buy a tier, please contact me on discord [Here!](https://discord.gg/TnfeMrV)
+And if you want a better tier than **Standard** feel free to contact me too, we can arrange something
 
 ### More tiers coming soon, if you have a big app and need it now, feel free to DM me on discord to discuss a price
 
