@@ -153,6 +153,15 @@ Its really subtle!
 To buy a tier, please contact me on discord [Here!](https://discord.gg/TnfeMrV)
 And if you want a better tier than **Standard** feel free to contact me too, we can arrange something
 
+### Error
+Here is an example of an error you could get in your console if you passed the quota, feel free to error handle and make your bot send your own custom error
+```json
+{
+  'You have passed your default quota!': '1 per 1 second',
+  status: 429
+}
+```
+
 ### More tiers coming soon, if you have a big app and need it now, feel free to DM me on discord to discuss a price
 
 ## Made by
