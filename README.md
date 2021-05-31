@@ -153,13 +153,26 @@ Its really subtle!
 To buy a tier, please contact me on discord [Here!](https://discord.gg/TnfeMrV)
 And if you want a better tier than **Standard** feel free to contact me too, we can arrange something
 
-### Error
+### Error Handling
 Here is an example of an error you could get in your console if you passed the quota, feel free to error handle and make your bot send your own custom error
 ```json
 {
   'You have passed your default quota!': '1 per 1 second',
   status: 429
 }
+```
+
+It is always recommended to handle the errors sent by wrapper, here is an example
+```js
+let Image
+try{
+  Image = await noodles_api.blur(result)
+} catch(err) {
+  return message.channel.send('You have been ratelimited (or there was a backend error)')
+}
+
+const attachment = new Discord.MessageAttachment(Image);
+message.channel.send(attachment);
 ```
 
 ### More tiers coming soon, if you have a big app and need it now, feel free to DM me on discord to discuss a price

@@ -1,6 +1,6 @@
 {
   "name": "noodles-wrapper",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A simple Noodles API wrapper made by FrenchNoodles#6046",
   "keywords": ["discord-bot", "api-wrapper", "discord-js", "noodles-api", "image-generation", "memes"],
   "main": "index.js",

@@ -7,7 +7,7 @@ async function request(endpoint, input='') {
     const res = await fetch(`${baseurl}${endpoint}/?${input}`, {
         headers: {'User-Agent': `noodles-wrapper@${process.env.npm_package_version}(https://www.npmjs.com/package/noodles-wrapper) by French Noodles#4000`}
     });
-    if(res.status == 429) return console.error(await res.json())
+    if(res.status == 429) {console.log(await res.json()); throw new Error('You have been rate limited')}
     else return res.buffer()
 }
 
