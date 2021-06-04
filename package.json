@@ -1,6 +1,6 @@
 {
   "name": "noodles-wrapper",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "A simple Noodles API wrapper made by FrenchNoodles#6046",
   "keywords": ["discord-bot", "api-wrapper", "discord-js", "noodles-api", "image-generation", "memes"],
   "main": "index.js",
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/French-Noodles/noodles-wrapper/issues"
   },
-  "homepage": "https://github.com/French-Noodles/noodles-wrapper#readme",
+  "homepage": "https://frenchnoodles.xyz/api",
   "dependencies": {
     "node-fetch": "^2.6.1"
   }
