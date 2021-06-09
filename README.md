@@ -75,7 +75,7 @@ let Image = await new noodles_api.balancecard() //You first make the variable
 .setTitle(title)
 .setText1(text1)
 .setText2(text2)
-.setTextColor(textcolor)
+.setTextColor(textcolor) //in hex
 .build() //and when your done, .build() it
 
 
@@ -98,7 +98,7 @@ let Image = await new noodles_api.welcomebanner()
 .setAvatar(avatar)
 .setTitle(username)
 .setSubtitle(subtitle)
-.setTextColor(textcolor)
+.setTextColor(textcolor) //in hex
 .build()
 ```
 
