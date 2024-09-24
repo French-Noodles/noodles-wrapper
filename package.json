@@ -3,29 +3,28 @@
     "version": "1.7.4",
     "description": "A simple Noodles API wrapper made by FrenchNoodles#6046",
     "keywords": [
-      "discord-bot",
-      "api-wrapper",
-      "discord-js",
-      "noodles-api",
-      "image-generation",
-      "memes"
+        "discord-bot",
+        "api-wrapper",
+        "discord-js",
+        "noodles-api",
+        "image-generation",
+        "memes"
     ],
     "main": "index.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/French-Noodles/noodles-wrapper.git"
+        "type": "git",
+        "url": "git+https://github.com/French-Noodles/noodles-wrapper.git"
     },
     "author": "French Noodles",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/French-Noodles/noodles-wrapper/issues"
+        "url": "https://github.com/French-Noodles/noodles-wrapper/issues"
     },
     "homepage": "https://frenchnoodles.xyz/api",
     "dependencies": {
-      "node-fetch": "^3.3.2"
+        "node-fetch": "^2.7.0"
     }
-  }
-  
+}
