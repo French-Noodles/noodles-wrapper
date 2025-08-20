@@ -1,10 +1,12 @@
 const fetch = require('node-fetch')
-const baseurl = 'https://frenchnoodles.xyz/api/endpoints/'
 
+const baseurl = 'https://api.frenchnoodles.xyz'
+const api_version = '1'
 
+const url = `${baseurl}/v${api_version}`
 
 async function request(endpoint, input='') {
-    const res = await fetch(`${baseurl}${endpoint}/?${input}`, {
+    const res = await fetch(`${url}/${endpoint}/?${input}`, {
         headers: {'User-Agent': `noodles-wrapper@${process.env.npm_package_version}(https://www.npmjs.com/package/noodles-wrapper) by French Noodles#4000`}
     });
     if(res.status == 429) {console.log(await res.json()); throw new Error('You have been rate limited')}
