@@ -10,15 +10,7 @@ async function request(endpoint, input='') {
         headers: {'User-Agent': `noodles-wrapper@${process.env.npm_package_version}(https://www.npmjs.com/package/noodles-wrapper) by French Noodles#4000`}
     });
     if(res.status == 429) {console.log(await res.json()); throw new Error('You have been rate limited')}
-    
-    // Check if response is JSON (indicates an error)
-    const contentType = res.headers.get('content-type');
-    if(contentType && contentType.includes('application/json')) {
-        const errorData = await res.json();
-        throw new Error(errorData.error || errorData.message || 'API returned an error');
-    }
-    
-    return res.buffer()
+    else return res.buffer()
 }
 
 module.exports.drake = async function(text1, text2) {
