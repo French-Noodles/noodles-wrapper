@@ -76,8 +76,14 @@ let Image = await new noodles_api.balancecard() //You first make the variable
 .setText1(text1)
 .setText2(text2)
 .setTextColor(textcolor) //in hex
-.build() //and when your done, .build() it
 
+// Make sure to catch any errors
+try {
+    //and when your done, build() it
+    Image = await Image.build()  
+} catch (error) {
+    return console.error(error)
+}
 
 let embed= new Discord.MessageEmbed()
   embed.setTitle(`Here is your balance ${message.author.username}!!`)
@@ -99,7 +105,12 @@ let Image = await new noodles_api.welcomebanner()
 .setTitle(username)
 .setSubtitle(subtitle)
 .setTextColor(textcolor) //in hex
-.build()
+
+try {
+    Image = await Image.build()  
+} catch (error) {
+    return console.error(error)
+}
 ```
 
 ## Endpoints
@@ -165,10 +176,19 @@ Here is an example of an error you could get in your console if you passed the q
 It is always recommended to handle the errors sent by wrapper, here is an example
 ```js
 let Image
-try{
+
+try {
   Image = await noodles_api.blur(result)
 } catch(err) {
-  return message.channel.send('You have been ratelimited (or there was a backend error)')
+  return console.error('You have been ratelimited  (or there was a backend error)')
+}
+
+// With endpoints that require building the image
+try {
+  Image = await Image.build()
+} catch (err) {
+  // This would display the error sent by the server
+  return console.error(error)
 }
 
 const attachment = new Discord.MessageAttachment(Image);
